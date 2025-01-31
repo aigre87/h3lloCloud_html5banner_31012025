@@ -9,7 +9,6 @@
 .banner{
     container-type: size;
     position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,9 +89,9 @@
     }
     .person{
         z-index: 20;
-        right: pxToCqw(187);
-        bottom: pxToCqw(80);
-        width: pxToCqw(91);
+        right: 17.278351cqw;
+        bottom: 3.447423cqw;
+        width: 13.381443cqw;
         height: auto;
     }
 }

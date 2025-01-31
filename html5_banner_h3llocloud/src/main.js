@@ -8,10 +8,33 @@ function pxToCqh($px, $containerSize = 250) {
     return ($px * 100 / $containerSize)+'cqh';
 }
 
-// const tlPersonBounce= gsap.timeline({repeat: -1});
-// tlPersonBounce.
-//     to('.person',{y:'-=10', duration: 1.7, ease: 'Sine.easeInOut'}).
-//     to('.person',{y:'+=10', duration: 1.7, ease: 'Sine.easeInOut'});
+const startTl = gsap.timeline({
+    paused: false,
+    defaults: {
+        ease: "elastic.out(0.4,0.4)"
+    }
+});
+startTl
+    .from('.cloud',{
+        x: (i) => {
+            return i<=1 ? "-150%" : 0;
+        },
+        y: (i) => {
+            return i>1 ? "150%" : 0;
+        },
+        stagger: {
+            grid: 'auto',
+            from: "center",
+            amount: 0.5
+        },
+        duration: 4,
+    }, 'start')
+    .from('.house',{y: "100%", duration: 1.5}, '-=3')
+
+const tlPersonBounce= gsap.timeline({repeat: -1, paused: false});
+tlPersonBounce.
+    to('.person',{y:'-=10', duration: 3, ease: 'Sine.easeInOut'}).
+    to('.person',{y:'+=10', duration: 3, ease: 'Sine.easeInOut'});
 
 const mainTl = gsap.timeline({
     paused: true,
@@ -24,6 +47,26 @@ const mainTl = gsap.timeline({
         duration: 5,
     }
 })
+const cloud12Tl = gsap.timeline({
+    paused: true,
+    yoyo: true,
+    repeat: -1,
+    repeatDelay: 0,
+    immediateRender: false,
+    defaults: {
+        ease: "Power1.easeInOut",
+        duration: 8,
+    }
+})
+cloud12Tl
+    .to('.cloud__1', {
+        x: pxToCqw(-50),
+        y: pxToCqh(176),
+    }, "start")
+    .to('.cloud__2', {
+        x: pxToCqw(-50),
+        y: pxToCqh(176),
+    }, "start")
 
 mainTl
     .to('.banner', {
@@ -41,14 +84,6 @@ mainTl
     .to('.button', {
         transformOrigin: '0% 0%',
         scale: (193/154),
-    }, "start")
-    .to('.cloud__1', {
-        x: pxToCqw(-50),
-        y: pxToCqh(176),
-    }, "start")
-    .to('.cloud__2', {
-        x: pxToCqw(-50),
-        y: pxToCqh(176),
     }, "start")
     .to('.cloud__3', {
         x: pxToCqw(-68),
@@ -68,48 +103,48 @@ mainTl
         transformOrigin: '0% 0%',
         filter: "blur(3.7px)",
     }, "start")
-    .to('.cloud__6', {
-        x: pxToCqw(5),
-        y: pxToCqh(25),
-        scale: (283/290),
-        transformOrigin: '0% 0%',
-        filter: "blur(3px)",
-    }, "start")
     .to('.house', {
         y: pxToCqh(40),
         transformOrigin: '0% 0%',
         scale: (300/352),
     }, "start")
-    .to('.person', {
-        x: pxToCqw(-2),
-        y: pxToCqh(22),
-        transformOrigin: '0% 0%',
-    }, "start")
+    // .to('.person', {
+    //     x: pxToCqw(-2),
+    //     y: pxToCqh(22),
+    //     transformOrigin: '0% 0%',
+    // }, "start")
+
+
 
 
 // DEBUG
-// Создаем UI для управления анимацией
-const controls = document.createElement("div");
-controls.innerHTML = `
-  <button id="play">Play</button>
-  <button id="pause">Pause</button>
-  <button id="restart">Restart</button>
-  <input type="range" id="slider" min="0" max="1" step="0.01" value="0">
-`;
-document.body.appendChild(controls);
+function createTimelineControls(timeline, containerId) {
+    const controls = document.createElement("div");
+    controls.innerHTML = `
+    <button class="play">Play</button>
+    <button class="pause">Pause</button>
+    <button class="restart">Restart</button>
+    <input type="range" class="slider" min="0" max="1" step="0.01" value="0">
+  `;
+    document.body.appendChild(controls);
 
-// Управление анимацией
-document.getElementById("play").addEventListener("click", () => mainTl.play());
-document.getElementById("pause").addEventListener("click", () => mainTl.pause());
-document.getElementById("restart").addEventListener("click", () => mainTl.restart());
+    const playButton = controls.querySelector(".play");
+    const pauseButton = controls.querySelector(".pause");
+    const restartButton = controls.querySelector(".restart");
+    const slider = controls.querySelector(".slider");
 
-// Перемотка анимации
-const slider = document.getElementById("slider");
-slider.addEventListener("input", () => {
-    mainTl.progress(slider.value).pause();
-});
+    playButton.addEventListener("click", () => timeline.play());
+    pauseButton.addEventListener("click", () => timeline.pause());
+    restartButton.addEventListener("click", () => timeline.restart());
 
-// Обновление ползунка
-mainTl.eventCallback("onUpdate", () => {
-    slider.value = mainTl.progress();
-});
+    slider.addEventListener("input", () => {
+        timeline.progress(slider.value).pause();
+    });
+
+    timeline.eventCallback("onUpdate", () => {
+        slider.value = timeline.progress();
+    });
+}
+// createTimelineControls(cloud12Tl);
+// createTimelineControls(mainTl);
+// createTimelineControls(tlPersonBounce);
