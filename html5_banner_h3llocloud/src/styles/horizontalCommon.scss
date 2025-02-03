@@ -1,0 +1,93 @@
+//horizontal
+.s320x50,
+.s320x100,
+.s728x90,
+.s970x250,
+.s1000x120{
+  background: linear-gradient(91deg, #0d0211 0%, #3a1b4b 12.72%, #110216 100%);
+  .content{
+    transform: translateY(-45%);
+    top: 50%;
+    width: 51%;
+    left: 16%;
+    font-size: 0;
+  }
+  .title{
+    margin-bottom: -10px;
+    &__t{
+      height: 28px;
+      width: auto;
+      margin-right: 2.5%;
+      margin-bottom: 10px;
+    }
+  }
+  .description{
+    margin: 22px 0 19px;
+    &__t{
+      height: 19.5px;
+      width: auto;
+      margin-right: 1%;
+    }
+  }
+  .button{
+    width: 31%;
+    height: auto;
+  }
+  .cloud{
+    &--1{
+      z-index: 20;
+      left: -12.9896907216%;
+      top: -71.2%;
+      width: 37.7319587629%;
+      transform: rotate(90deg);
+    }
+    &--2{
+      z-index: 10;
+      left: -17.6288659794%;
+      bottom: -0.9278350515%;
+      width: 37.7319587629%;
+      filter: blur(1px);
+      transform: rotate(90deg);
+    }
+    &--3{
+      z-index: 35;
+      right: 36%;
+      bottom: -30%;
+      height: 66%;
+      filter: blur(4px);
+      opacity: 0.9;
+    }
+    &--4{
+      z-index: 30;
+      right: 17.701031%;
+      bottom: -11.247423%;
+      height: 54%;
+      filter: blur(1.5px);
+    }
+    &--5{
+      z-index: 50;
+      right: -1.9587628866%;
+      bottom: -3.5051546392%;
+      height: 53%;
+    }
+    &--6{
+      z-index: 60;
+      right: -2.0618556701%;
+      bottom: -3.6082474227%;
+      height: 54%;
+    }
+  }
+  .house{
+    z-index: 10;
+    right: 0%;
+    bottom: -1.2%;
+    height: 91%;
+  }
+  .person{
+    z-index: 20;
+    right: 19.7%;
+    bottom: 18%;
+    height: 49%;
+    width: auto;
+  }
+}

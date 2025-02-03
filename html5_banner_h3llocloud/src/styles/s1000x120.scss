@@ -1,0 +1,60 @@
+.s1000x120{
+  .content{
+    top: 49%;
+    left: 12.9%;
+  }
+  .title{
+    margin-bottom: -8px;
+    &__t{
+      height: 18.2px;
+      margin-right: 1.5%;
+      margin-bottom: 8px;
+    }
+  }
+  .description{
+    margin: 8px 0 0px;
+    &__t{
+      height: 16.4px;
+    }
+  }
+  .button{
+    display: none;
+  }
+  .cloud{
+    &--1,
+    &--2{
+      width: 27%;
+    }
+    &--1{
+
+    }
+    &--2{
+
+    }
+    &--3{
+      right: 25%;
+    }
+    &--4{
+      height: 62%;
+      right: 16%;
+    }
+    &--5{
+      right: 2.041237%;
+      height: 73%;
+      bottom: -16.5051546392%;
+    }
+    &--6{
+      right: 1.938144%;
+      height: 74%;
+      bottom: -16.6082474227%;
+    }
+  }
+  .house{
+    bottom: -6.2%;
+    height: 120%;
+  }
+  .person{
+    height: 62%;
+    right: 15.7%;
+  }
+}
