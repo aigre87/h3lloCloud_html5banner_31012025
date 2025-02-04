@@ -1,0 +1,72 @@
+.s300x600{
+  .content{
+    width: 80%;
+    top: 19.2%;
+    left: 11.7%;
+  }
+  .title{
+
+    &__t{
+      height: 21.8px;
+    }
+  }
+  .description{
+    margin: 25px 0 25px;
+    &__t{
+      height: 17px;
+    }
+  }
+  .button{
+    width: 65%;
+  }
+  .cloud{
+    &--1,
+    &--2{
+
+    }
+    &--1{
+      filter: blur(1px);
+      width: 105%;
+      display: block;
+      top: -13%;
+      left: -43%;
+      transform: rotate(175deg);
+    }
+    &--2{
+
+    }
+    &--3{
+
+    }
+    &--4{
+      filter: blur(4px);
+      width: 89%;
+      bottom: -9.2474%;
+      right: 37.701%;
+    }
+    &--5{
+      width: 107%;
+      bottom: -6.60825%;
+      right: -36.0619%;
+      transform: rotate(-6deg);
+    }
+    &--6{
+      width: 109%;
+      bottom: -5.60825%;
+      right: -37.0619%;
+      transform: rotate(-6deg);
+    }
+  }
+  .house{
+    width: 75%;
+    height: auto;
+    bottom: 9.8%;
+    right: 0%;
+  }
+  .person{
+    width: 37%;
+    height: auto;
+    bottom: 6%;
+    right: 43%;
+  }
+}

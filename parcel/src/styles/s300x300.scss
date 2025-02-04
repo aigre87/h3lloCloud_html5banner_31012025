@@ -1,0 +1,73 @@
+.s300x300{
+  .content{
+    width: 70%;
+    font-size: 0;
+    top: 11.5%;
+    left: 10.6%;
+  }
+  .title{
+    margin-bottom: -3px;
+    &__t{
+      height: 19px;
+      margin-bottom: 3px;
+    }
+  }
+  .description{
+    margin: 15px 0 12px;
+    width: 70%;
+    &__t{
+      width: auto;
+      height: 11.4px;
+      margin-bottom: 3px;
+      margin-right: 1%;
+    }
+  }
+  .button{
+    width: 50%;
+  }
+  .cloud{
+    &--1,
+    &--2{
+
+    }
+    &--1{
+
+    }
+    &--2{
+
+    }
+    &--3{
+
+    }
+    &--4{
+      filter: blur(2px);
+      width: 53%;
+      bottom: -6.2474%;
+      right: 33.701%;
+    }
+    &--5{
+      width: 65%;
+      bottom: -7.60825%;
+      right: -18.0619%;
+      transform: rotate(-6deg);
+    }
+    &--6{
+      width: 67%;
+      bottom: -6.60825%;
+      right: -19.0619%;
+      transform: rotate(-6deg);
+    }
+  }
+  .house{
+    width: 49%;
+    height: auto;
+    bottom: 13.8%;
+    right: 0%;
+  }
+  .person{
+    width: 25%;
+    height: auto;
+    bottom: 9%;
+    right: 27.7%;
+  }
+}

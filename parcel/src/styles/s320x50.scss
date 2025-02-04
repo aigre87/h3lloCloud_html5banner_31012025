@@ -1,0 +1,51 @@
+.s320x50{
+  .content{
+    left: 13%;
+  }
+  .title{
+    margin-bottom: -2px;
+    &__t{
+      height: 7.1px;
+      margin-right: 2.5%;
+      margin-bottom: 2px;
+    }
+  }
+  .description{
+    margin: 6px 0 0px;
+    &__t{
+      height: 5.5px;
+    }
+  }
+  .button{
+    display: none;
+  }
+  .cloud{
+    &--1,
+    &--2{
+      width: 30%;
+    }
+    &--1{
+      top: -71.2%;
+    }
+    &--2{
+
+    }
+    &--3{
+      right: 25%;
+    }
+    &--4{
+      right: 10%;
+    }
+    &--5{
+      right: calc(-1.9587628866%);
+    }
+    &--6{
+      right: calc(-2.0618556701%);
+    }
+  }
+  .house{
+  }
+  .person{
+    right: 11.7%;
+  }
+}

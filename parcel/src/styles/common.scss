@@ -1,0 +1,130 @@
+//common
+.banner{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  div{
+    display: block;
+  }
+  .content{
+    display: block;
+    position: absolute;
+    z-index: 110;
+  }
+  .title,
+  .description{
+    display: block;
+    font-size: 0;
+    path{
+      fill: #fff;
+    }
+    &__t{
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+  .button{
+    path{
+      fill: #131313;
+    }
+  }
+  .image{
+    position: absolute;
+  }
+  .cloud{
+    &--1{
+
+    }
+    &--2{
+
+    }
+    &--3{
+
+    }
+    &--4{
+
+    }
+    &--5{
+
+    }
+    &--6{
+
+    }
+  }
+  .house{
+
+  }
+  .person{
+
+  }
+}
+
+.s320x50{
+  width: 320px;
+  height: 50px;
+}
+.s320x100{
+  width: 320px;
+  height: 100px;
+}
+.s728x90{
+  width: 728px;
+  height: 90px;
+}
+.s970x250{
+  width: 970px;
+  height: 250px;
+}
+.s1000x120{
+  width: 1000px;
+  height: 120px;
+}
+
+// vertical
+.s240x400,
+.s320x480,
+.s300x500,
+.s260x600,
+.s300x600,
+.s300x250,
+.s336x280,
+.s300x300,
+.s480x320{
+
+}
+.s240x400{
+  width: 240px;
+  height: 400px;
+}
+.s320x480{
+  width: 320px;
+  height: 480px;
+}
+.s300x500{
+  width: 300px;
+  height: 500px;
+}
+.s260x600{
+  width: 260px;
+  height: 600px;
+}
+.s300x600{
+  width: 300px;
+  height: 600px;
+}
+.s300x250{
+  width: 300px;
+  height: 250px;
+}
+.s336x280{
+  width: 336px;
+  height: 280px;
+}
+.s300x300{
+  width: 300px;
+  height: 300px;
+}
+.s480x320{
+  width: 480px;
+  height: 320px;
+}

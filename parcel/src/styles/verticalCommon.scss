@@ -1,0 +1,88 @@
+.s240x400,
+.s320x480,
+.s300x500,
+.s260x600,
+.s300x600,
+.s300x250,
+.s336x280,
+.s300x300,
+.s480x320{
+  background: linear-gradient(171deg, #340943 0%, #000 100%);
+  .content{
+    width: 78%;
+    font-size: 0;
+    top: 9.3%;
+    left: 11%;
+  }
+  .title{
+    margin-bottom: -4px;
+    &__t{
+      height: 23px;
+      width: auto;
+      margin-right: 2.5%;
+      margin-bottom: 4px;
+      &--t5{
+        display: none;
+      }
+    }
+  }
+  .description{
+    margin: 17px 0 23px;
+    &__t{
+      width: auto;
+      height: 12.5px;
+      margin-right: 1%;
+      margin-bottom: 5px;
+    }
+  }
+  .button{
+    width: 61%;
+    height: auto;
+  }
+  .cloud{
+    &--1{
+      display: none;
+    }
+    &--2{
+      display: none;
+    }
+    &--3{
+      display: none;
+    }
+    &--4{
+      z-index: 100;
+      filter: blur(4px);
+      width: 100%;
+      bottom: -17.2474%;
+      right: 41.701%;
+    }
+    &--5{
+      z-index: 50;
+      width: 82%;
+      bottom: -9.60825%;
+      right: -14.06186%;
+
+    }
+    &--6{
+      z-index: 60;
+      width: 84%;
+      bottom: -8.60825%;
+      right: -15.06186%;
+
+    }
+  }
+  .house{
+    z-index: 10;
+    right: 0%;
+    bottom: -1.2%;
+    width: 75%;
+    height: auto;
+  }
+  .person{
+    z-index: 20;
+    width: 32%;
+    height: auto;
+    bottom: 5%;
+    right: 48.7%;
+  }
+}
