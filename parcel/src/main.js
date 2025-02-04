@@ -19,6 +19,31 @@ const verticalMods = [
 const banner = document.querySelector('.banner');
 const bannerIsVertical = verticalMods.some(str => banner.classList.contains(str));
 
+const tlPersonBounce= gsap.timeline({repeat: -1, paused: true});
+const mainTl = gsap.timeline({
+    paused: true,
+    yoyo: true,
+    repeat: -1,
+    repeatDelay: 0,
+    immediateRender: false,
+    defaults: {
+        ease: "Power1.easeInOut",
+        duration: 5,
+    }
+})
+const cloud12Tl = gsap.timeline({
+    paused: true,
+    yoyo: bannerIsVertical ? false : true,
+    repeat: -1,
+    repeatDelay: 0,
+    immediateRender: false,
+    ease: "sine.inOut",
+    defaults: {
+        ease: "Power1.easeInOut",
+        duration: 8,
+    }
+})
+
 const startTl = gsap.timeline({
     paused: false,
     defaults: {
@@ -95,34 +120,10 @@ startTl.add(
 )
 //startTl.progress(1)
 
-const tlPersonBounce= gsap.timeline({repeat: -1, paused: true});
+
 tlPersonBounce.
     to('.person',{y:'-=8', duration: 3, ease: 'Sine.easeInOut'}).
     to('.person',{y:'+=8', duration: 3, ease: 'Sine.easeInOut'});
-
-const mainTl = gsap.timeline({
-    paused: true,
-    yoyo: true,
-    repeat: -1,
-    repeatDelay: 0,
-    immediateRender: false,
-    defaults: {
-        ease: "Power1.easeInOut",
-        duration: 5,
-    }
-})
-const cloud12Tl = gsap.timeline({
-    paused: true,
-    yoyo: bannerIsVertical ? false : true,
-    repeat: -1,
-    repeatDelay: 0,
-    immediateRender: false,
-    ease: "sine.inOut",
-    defaults: {
-        ease: "Power1.easeInOut",
-        duration: 8,
-    }
-})
 
 if(bannerIsVertical){
     const cloud12TlDur = 12;
