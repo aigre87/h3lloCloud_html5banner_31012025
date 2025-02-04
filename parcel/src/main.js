@@ -207,42 +207,42 @@ mainTl
     //     transformOrigin: '0% 0%',
     // }, "start")
 
-
-
-
-// DEBUG
-function createTimelineControls(timeline, containerId) {
-    const controls = document.createElement("div");
-    controls.innerHTML = `
-    <div class="ttl"></div>
-    <button class="play">Play</button>
-    <button class="pause">Pause</button>
-    <button class="restart">Restart</button>
-    <input type="range" class="slider" min="0" max="1" step="0.01" value="0">
-  `;
-    document.body.appendChild(controls);
-    controls.style.position = 'relative';
-    controls.style.zIndex = 1000;
-
-    const ttl = controls.querySelector(".ttl");
-    const playButton = controls.querySelector(".play");
-    const pauseButton = controls.querySelector(".pause");
-    const restartButton = controls.querySelector(".restart");
-    const slider = controls.querySelector(".slider");
-    ttl.innerHTML = containerId;
-
-    playButton.addEventListener("click", () => timeline.play());
-    pauseButton.addEventListener("click", () => timeline.pause());
-    restartButton.addEventListener("click", () => timeline.restart());
-
-    slider.addEventListener("input", () => {
-        timeline.progress(slider.value).pause();
-    });
-
-    timeline.eventCallback("onUpdate", () => {
-        slider.value = timeline.progress();
-    });
-}
-createTimelineControls(cloud12Tl, 'cloud12Tl');
-createTimelineControls(mainTl, 'mainTl');
-createTimelineControls(tlPersonBounce, 'tlPersonBounce');
+//
+//
+//
+// // DEBUG
+// function createTimelineControls(timeline, containerId) {
+//     const controls = document.createElement("div");
+//     controls.innerHTML = `
+//     <div class="ttl"></div>
+//     <button class="play">Play</button>
+//     <button class="pause">Pause</button>
+//     <button class="restart">Restart</button>
+//     <input type="range" class="slider" min="0" max="1" step="0.01" value="0">
+//   `;
+//     document.body.appendChild(controls);
+//     controls.style.position = 'relative';
+//     controls.style.zIndex = 1000;
+//
+//     const ttl = controls.querySelector(".ttl");
+//     const playButton = controls.querySelector(".play");
+//     const pauseButton = controls.querySelector(".pause");
+//     const restartButton = controls.querySelector(".restart");
+//     const slider = controls.querySelector(".slider");
+//     ttl.innerHTML = containerId;
+//
+//     playButton.addEventListener("click", () => timeline.play());
+//     pauseButton.addEventListener("click", () => timeline.pause());
+//     restartButton.addEventListener("click", () => timeline.restart());
+//
+//     slider.addEventListener("input", () => {
+//         timeline.progress(slider.value).pause();
+//     });
+//
+//     timeline.eventCallback("onUpdate", () => {
+//         slider.value = timeline.progress();
+//     });
+// }
+// createTimelineControls(cloud12Tl, 'cloud12Tl');
+// createTimelineControls(mainTl, 'mainTl');
+// createTimelineControls(tlPersonBounce, 'tlPersonBounce');
