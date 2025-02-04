@@ -155,9 +155,9 @@ if(bannerIsVertical){
 
 mainTl
     .fromTo('.banner', {
-        backgroundImage: bannerIsVertical ? 'linear-gradient(171deg, #340943 0%, #000 100%)' : "linear-gradient(91deg, #0d0211 0%, #3a1b4b 12.72%, #110216 100%)",
+        backgroundImage: bannerIsVertical ? 'linear-gradient(225deg,#0d0211 0%, #340943 1%, #000 100%)' : "linear-gradient(45deg, #0d0211 0%, #3a1b4b 12.72%, #110216 100%)",
     },{
-        backgroundImage: bannerIsVertical ? 'linear-gradient(171deg, #340943 0%, #000 100%)' : "linear-gradient(103deg, #0d0211 7.52%, #3a1b4b 100%, #110216 101%)",
+        backgroundImage: bannerIsVertical ? 'linear-gradient(225deg, #0d0211 0%, #340943 50%, #000 100%)' : "linear-gradient(45deg, #0d0211 7.52%, #3a1b4b 100%, #110216 101%)",
     }, "start")
     .to('.title', {
         transformOrigin: '0% 50%',
