@@ -4,13 +4,13 @@
     <link rel="stylesheet" href="style.scss"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--  vertical  -->
+    <!--  horizontal  -->
     <!--s320x50-->
     <!--s320x100-->
     <!--s728x90-->
     <!--s970x250-->
     <!--s1000x120-->
-    <!--  horizontal  -->
+    <!--  vertical  -->
     <!--s240x400-->
     <!--s320x480-->
     <!--s300x500-->
@@ -20,11 +20,11 @@
     <!--s336x280-->
     <!--s300x300-->
     <!--s480x320-->
-    <meta name="ad.size" content="width=300,height=600">
+    <meta name="ad.size" content="width=480,height=320">
 </head>
 <body>
 <a id="click_area" href="#" target="_blank">
-<span class="banner s300x600">
+    <span class="banner s480x320">
       <span class="content">
         <span class="title">
           <svg class="title__t title__t--t1" width="174" height="31" viewBox="0 0 174 31" fill="none"><path
@@ -76,11 +76,12 @@
       <img class="image cloud cloud--6" src="/src/images/cloud_final_x2.png" alt="img">
       <img class="image house" src="/src/images/house_final_x2.png" alt="img">
       <img class="image person" src="/src/images/person_final_x2.png" alt="img">
+      <svg class="zeroPlus" width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.76 17.758V3.325h1.934v14.433H31.76Zm-6.262-6.263V9.562h14.433v1.933H25.498ZM9.923 20c-2.062 0-3.84-.412-5.335-1.237a8.568 8.568 0 0 1-3.402-3.505C.396 13.763 0 12.01 0 10s.395-3.763 1.186-5.258a8.403 8.403 0 0 1 3.402-3.48C6.082.422 7.86 0 9.923 0s3.831.421 5.309 1.263a8.403 8.403 0 0 1 3.402 3.48C19.424 6.236 19.82 7.99 19.82 10c0 1.993-.396 3.746-1.186 5.258a8.568 8.568 0 0 1-3.402 3.505C13.754 19.588 11.985 20 9.922 20Zm-.026-2.062c2.354 0 4.184-.696 5.49-2.087 1.305-1.392 1.958-3.342 1.958-5.851s-.653-4.459-1.958-5.85c-1.306-1.41-3.136-2.114-5.49-2.114-2.337 0-4.158.705-5.464 2.113C3.127 5.541 2.474 7.491 2.474 10s.653 4.459 1.959 5.85c1.306 1.392 3.127 2.088 5.464 2.088Z" fill="#fff"/></svg>
     </span>
   </a>
-  <script>
-    document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);
-  </script>
+<script>
+document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);
+</script>
 <script src="js/gsap.js"></script>
 <script src="main.js"></script>
 </body>
