@@ -1,0 +1,55 @@
+@use "sass:math";
+html, body{
+  margin: 0;
+  padding: 0;
+}
+#click_area{
+  text-decoration: none;
+}
+.banner{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #c0ef4b;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  div{
+    display: block;
+  }
+  &__wrapper{
+
+  }
+  &__man{
+
+  }
+  &__logo{
+
+  }
+  &__content{
+
+    &_txt{
+
+      span{
+        display: block;
+      }
+      &--1{
+
+      }
+      &--2{
+
+      }
+    }
+  }
+  &__footnote{
+
+    &_content{
+
+      span{
+        display: block;
+      }
+    }
+    &_age{
+
+    }
+  }
+}

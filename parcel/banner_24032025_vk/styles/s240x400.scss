@@ -1,0 +1,46 @@
+.s240x400{
+  width: 240px;
+  height: 400px;
+}
+.banner{
+
+  div{
+
+  }
+  &__wrapper{
+    width: 90%;
+  }
+  &__man{
+    left: -4px;
+  }
+  &__logo{
+    padding-top: 48px;
+  }
+  &__content{
+    margin-top: -10px;
+    gap: 16px;
+    padding: 30px 18px;
+    &_txt{
+      font-size: 18px;
+      &--1{
+
+      }
+      &--2{
+
+      }
+    }
+  }
+  &__footnote{
+    font-size: 6px;
+    padding-bottom: 22px;
+    &_content{
+      padding-left: 20px;
+      span{
+
+      }
+    }
+    &_age{
+      font-size: 8px;
+    }
+  }
+}

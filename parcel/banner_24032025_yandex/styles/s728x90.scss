@@ -1,0 +1,48 @@
+@use "sass:math";
+.s728x90{
+  .logo{
+    bottom: 10%;
+    left: 2%;
+    height: 14%;
+    max-height: 34px;
+  }
+  .content{
+    top: 13%;
+    left: 2%;
+  }
+  .row{
+    .tag{
+      width: auto;
+      height: 28px;
+      margin-right: 12px;
+    }
+    .word{
+      width: auto;
+      height: 19.33px;
+      margin-right: 8px;
+    }
+    &.second{
+      margin-top: 1px;
+      padding-left: 38px;
+    }
+  }
+  .details{
+    bottom: 14%;
+    left: 22%;
+    font-size: 4px;
+  }
+  .image{
+    width: 44.5%;
+    &__iw{
+
+    }
+    &__img{
+      object-position: 100% 69%;
+      object-fit: cover;
+    }
+  }
+  .animation{
+    //--columns: 4!important;
+	//--rows: 4!important;
+  }
+}

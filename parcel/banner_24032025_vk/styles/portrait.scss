@@ -1,0 +1,76 @@
+@use "sass:math";
+.s240x400 .banner,
+.s300x600 .banner {
+  div{
+
+  }
+  &__wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &__man{
+    z-index: 0;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: -4px;
+  }
+  &__logo{
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+  }
+  &__content{
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 16px;
+    color: #000;
+    border-radius: 20px;
+    padding: 30px 18px;
+    font-weight: 700;
+    &_txt{
+      line-height: 1;
+      span{
+
+      }
+      &--1{
+
+      }
+      &--2{
+
+      }
+    }
+  }
+  &__footnote{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 6px;
+    line-height: math.div(8, 6);
+    display: flex;
+    width: 100%;
+    &_content{
+      padding-left: 20px;
+      flex: 1 1 auto;
+      span{
+
+      }
+    }
+    &_age{
+      font-size: 8px;
+      display: block;
+      align-self: flex-end;
+    }
+  }
+}

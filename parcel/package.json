@@ -3,7 +3,11 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --no-source-maps --no-cache --public-url '.'"
+    "start_vk": "parcel banner_24032025_vk/index.html",
+    "start_yandex": "parcel banner_24032025_yandex/index.html",
+    "build_banner_31012025": "parcel build --no-source-maps --no-cache --public-url '.'",
+    "build_banner_24032025_vk": "parcel build banner_24032025_vk/index.html --no-source-maps --no-cache --public-url '.'",
+    "build_banner_24032025_yandex": "parcel build banner_24032025_yandex/index.html --no-source-maps --no-cache --public-url '.'"
   },
   "dependencies": {
     "gsap": "^3.12.7"

@@ -1,0 +1,22 @@
+@use "styles/common.scss" as *;
+@use "styles/portrait.scss" as *;
+@use "styles/landscape.scss" as *;
+@use "styles/squere.scss" as *;
+//hor
+@use "styles/s320x50" as *;
+@use "styles/s320x100" as *;
+@use "styles/s728x90" as *;
+@use "styles/s970x250" as *;
+@use "styles/s1000x120" as *;
+
+//ver
+@use "styles/s160x600" as *;
+@use "styles/s320x480" as *;
+@use "styles/s240x400" as *;
+@use "styles/s300x500" as *;
+@use "styles/s240x600" as *;
+@use "styles/s300x600" as *;
+@use "styles/s300x250" as *;
+@use "styles/s336x280" as *;
+@use "styles/s300x300" as *;
+@use "styles/s480x320" as *;

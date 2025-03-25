@@ -1,0 +1,166 @@
+@use "sass:math";
+html, body{
+  margin: 0;
+  padding: 0;
+}
+#click_area{
+  text-decoration: none;
+  display: block;
+  &.debug{
+    .banner{
+      border: 1px solid red;
+      display: inline-flex;
+    }
+  }
+}
+.banner{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  *{
+    pointer-events: none;
+  }
+  span{
+    display: block;
+  }
+  .logo{
+
+  }
+  .content{
+    position: absolute;
+    z-index: 2;
+  }
+  .row{
+    display: flex;
+    align-items: flex-end;
+    &__tag{
+
+    }
+    &__word{
+
+    }
+  }
+  .details{
+    position: absolute;
+    color: #B5B5B5;
+    z-index: 2;
+  }
+  .image{
+    position: absolute;
+    z-index: 0;
+    &__iw{
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    &__img{
+      will-change: transform;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+        background-image: url('images/bg.png');
+        background-size: cover;
+        background-position: center;
+      }
+      &__img{
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .animation{
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+	grid-template-rows: repeat(var(--rows), 1fr);
+
+	gap: 0;
+    .sqr{
+      will-change: transform;
+      cursor: pointer;
+      pointer-events: all;
+      background: #c6f05e;
+      transform: scale(0);
+      transform-origin: 50% 50%;
+    }
+  }
+}
+
+.s160x600{
+  width: 160px;
+  height: 600px;
+}
+.s320x50{
+  width: 320px;
+  height: 50px;
+}
+.s320x100{
+  width: 320px;
+  height: 100px;
+}
+.s728x90{
+  width: 728px;
+  height: 90px;
+}
+.s970x250{
+  width: 970px;
+  height: 250px;
+}
+.s1000x120{
+  width: 1000px;
+  height: 120px;
+}
+.s240x400{
+  width: 240px;
+  height: 400px;
+}
+.s320x480{
+  width: 320px;
+  height: 480px;
+}
+.s300x500{
+  width: 300px;
+  height: 500px;
+}
+.s240x600{
+  width: 240px;
+  height: 600px;
+}
+.s300x600{
+  width: 300px;
+  height: 600px;
+}
+.s300x250{
+  width: 300px;
+  height: 250px;
+}
+.s336x280{
+  width: 336px;
+  height: 280px;
+}
+.s300x300{
+  width: 300px;
+  height: 300px;
+}
+.s480x320{
+  width: 480px;
+  height: 320px;
+}
