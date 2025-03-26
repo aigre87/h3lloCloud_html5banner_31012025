@@ -1,3 +1,50 @@
 .s300x600{
+  .content{
 
+  }
+  .row{
+    .tag{
+
+    }
+    .word{
+      //height: 22.5px;
+    }
+    .dash{
+
+    }
+    &.second{
+
+      .word{
+
+      }
+    }
+  }
+  .details{
+
+  }
+  .image{
+
+    &__iw{
+
+    }
+    &__img{
+
+    }
+  }
+    @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+
+      }
+      &__img{
+
+      }
+    }
+  }
+  .animation{
+
+    .sqr{
+
+    }
+  }
 }

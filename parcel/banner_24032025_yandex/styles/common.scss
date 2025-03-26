@@ -27,20 +27,33 @@ html, body{
   span{
     display: block;
   }
-  .logo{
-
-  }
   .content{
     position: absolute;
     z-index: 2;
   }
   .row{
-    display: flex;
-    align-items: flex-end;
-    &__tag{
+    font-size: 0;
+    .tag{
 
     }
-    &__word{
+    .word{
+      display: inline-block;
+    }
+    .dash{
+      margin-top: 2px;
+    }
+    .br_helper{
+      display: none;
+    }
+    &.first{
+      display: table;
+      vertical-align: middle;
+      .cell_helper{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    &.second{
 
     }
   }
@@ -49,11 +62,14 @@ html, body{
     color: #B5B5B5;
     z-index: 2;
   }
+  .zero{
+    position: absolute;
+    z-index: 2;
+  }
   .image{
     position: absolute;
     z-index: 0;
     &__iw{
-      border-radius: 12px;
       overflow: hidden;
       position: relative;
       width: 100%;
@@ -82,24 +98,33 @@ html, body{
     }
   }
   .animation{
-    height: 100%;
+    overflow: hidden;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
     z-index: 1;
 	display: grid;
 	grid-template-columns: repeat(var(--columns), 1fr);
 	grid-template-rows: repeat(var(--rows), 1fr);
-
 	gap: 0;
     .sqr{
       will-change: transform;
-      cursor: pointer;
       pointer-events: all;
       background: #c6f05e;
       transform: scale(0);
       transform-origin: 50% 50%;
+      transition: background-color 0.15s ease-in-out;
+      &:hover{
+        background: #75a113;
+      }
+      &.special{
+        background: #354e00;
+        animation: backgroundCycle 1.4s infinite alternate ease-in-out;
+        @keyframes backgroundCycle {
+            0% { background-color: #B5B5B5 }
+            50% { background-color: #b5ff00
+            }
+            100% { background-color: #B5B5B5 }
+        }
+      }
     }
   }
 }

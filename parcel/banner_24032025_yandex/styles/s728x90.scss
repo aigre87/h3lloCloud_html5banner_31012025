@@ -1,35 +1,29 @@
 @use "sass:math";
 .s728x90{
-  .logo{
-    bottom: 10%;
-    left: 2%;
-    height: 14%;
-    max-height: 34px;
-  }
   .content{
-    top: 13%;
-    left: 2%;
+    top: 14%;
+    left: 2.1%;
   }
   .row{
     .tag{
       width: auto;
-      height: 28px;
-      margin-right: 12px;
+      height: 25px;
+      margin-right: 10px;
     }
     .word{
       width: auto;
-      height: 19.33px;
-      margin-right: 8px;
+      height: 21.63px;
+      margin-right: 7px;
     }
     &.second{
-      margin-top: 1px;
-      padding-left: 38px;
+      margin-top: 6px;
+      padding-left: 40px;
     }
   }
   .details{
-    bottom: 14%;
-    left: 22%;
-    font-size: 4px;
+    bottom: 10%;
+    left: 7.8%;
+    font-size: 7px;
   }
   .image{
     width: 44.5%;

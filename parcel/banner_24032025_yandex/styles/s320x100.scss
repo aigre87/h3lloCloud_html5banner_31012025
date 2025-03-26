@@ -1,3 +1,60 @@
 .s320x100{
+  .content{
+    top: 22%;
+    left: 10px;
+  }
+  .row{
+    .tag{
+      height: 21px;
+      margin-right: 12px;
+    }
+    .word{
+      height: 12px;
+      margin-right: 4px;
+    }
+    &.second{
+      margin-top: 5px;
+      padding-left: 12px;
+    }
+  }
+  .details{
+    font-size: 4px;
+    bottom: 5px;
+    left: 10px;
+  }
+  .zero{
+    bottom: 14px;
+    left: 10px;
+    height: 8px;
+    width: auto;
+  }
+  .image{
+    padding: 2px;
+    width: 33%;
+    &__iw{
 
+    }
+    &__img{
+
+    }
+  }
+    @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+
+      }
+      &__img{
+
+      }
+    }
+  }
+  .animation{
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    width: 40%;
+    .sqr{
+
+    }
+  }
 }

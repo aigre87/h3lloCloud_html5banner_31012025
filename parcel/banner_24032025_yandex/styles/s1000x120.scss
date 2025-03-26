@@ -1,3 +1,49 @@
 .s1000x120{
+  .content{
+    top: 18%;
+    left: 2%;
+  }
+  .row{
+    .tag{
+      width: auto;
+      height: 32px;
+      margin-right: 12px;
+    }
+    .word{
+      width: auto;
+      height: 22px;
+      margin-right: 8px;
+    }
+    &.second{
+      margin-top: 2px;
+      padding-left: 38px;
+    }
+  }
+  .details{
+    bottom: 10px;
+    left: 50px;
+    font-size: 8px;
+  }
+  .zero{
+    bottom: 11px;
+    left: 2%;
+    height: 10px;
+    width: auto;
+  }
+  .image{
+    width: 44%;
+    &__iw{
 
+    }
+    &__img{
+      object-position: 100% 69%;
+      object-fit: cover;
+    }
+  }
+  .animation{
+    width: 56%;
+    .sqr{
+
+    }
+  }
 }

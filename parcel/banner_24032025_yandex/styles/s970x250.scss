@@ -1,3 +1,57 @@
 .s970x250{
+  .content{
+    top: 55px;
+    left: 30px;
+  }
+  .row{
+    .tag{
+      height: 44px;
+    }
+    .word{
+      height: 30px;
+    }
+    &.second{
+      margin-top: 14px;
+      padding-left: 40px;
+    }
+  }
+  .details{
+    font-size: 10px;
+    left: 60px;
+    bottom: 12px;
+  }
+  .zero{
+    bottom: 14.5px;
+    left: 30px;
+    height: 12px;
+    width: auto;
+  }
+  .image{
+    padding: 7px;
+    width: 40%;
+    &__iw{
 
+    }
+    &__img{
+
+    }
+  }
+    @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+
+      }
+      &__img{
+
+      }
+    }
+  }
+  .animation{
+    top: 7px;
+    bottom: 7px;
+    right: 7px;
+    .sqr{
+
+    }
+  }
 }

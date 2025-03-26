@@ -4,27 +4,24 @@
 .s728x90,
 .s970x250,
 .s1000x120{
-  .logo{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    height: 20%;
-    max-height: 34px;
-    width: auto;
-  }
   .content{
     top: 5%;
     left: 5%;
   }
   .row{
-    &--second{
+    .tag{
+      width: auto;
+      margin-right: 12px;
+    }
+    .word{
+      width: auto;
+      margin-right: 8px;
+    }
+    &.second{
+      margin-top: 4px;
       padding-left: 20px;
     }
-    &__tag{
-      width: auto;
-      height: 28px;
-    }
-    &__word{
+    .dash{
 
     }
   }
@@ -33,23 +30,44 @@
     left: 20%;
     font-size: 4px;
   }
+  .zero{
+    bottom: 11px;
+    left: 16px;
+    height: 10px;
+    width: auto;
+  }
   .image{
     right: 0%;
     top: 0%;
     height: 100%;
     display: block;
-    width: 33%;
+    width: 35%;
     padding: 4px;
     box-sizing: border-box;
     &__iw{
-
+      border-radius: 12px;
     }
     &__img{
       object-position: 50% 60%;
     }
   }
+    @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+
+      }
+      &__img{
+
+      }
+    }
+  }
   .animation{
+    width: 50%;
+    right: 4px;
     top: 4px;
-    height: calc(100% - 8px);
+    bottom: 4px;
+    .sqr{
+
+    }
   }
 }

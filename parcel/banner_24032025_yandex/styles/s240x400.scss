@@ -1,3 +1,60 @@
 .s240x400{
+  .content{
+    width: 90%;
+    top: 15%;
+    left: 6%;
+  }
+  .row{
+    .tag{
+      height: 24px;
+    }
+    .word{
+      height: 18px;
+      margin-right: 7px;
+      margin-top: 3px;
+    }
+    .dash{
+      margin-top: 1px;
+      margin-left: 5px;
+    }
+    &.second{
+      .word{
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .details{
 
+  }
+  .zero{
+    bottom: 11%;
+    left: 5.5%;
+    height: 12px;
+    width: auto;
+  }
+  .image{
+
+    &__iw{
+
+    }
+    &__img{
+
+    }
+  }
+    @supports not (object-fit: cover) {
+    .image {
+      &__iw{
+
+      }
+      &__img{
+
+      }
+    }
+  }
+  .animation{
+
+    .sqr{
+
+    }
+  }
 }
