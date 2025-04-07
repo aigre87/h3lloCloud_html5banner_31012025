@@ -19,7 +19,7 @@ html, body{
   overflow: hidden;
   background: #FFFFFF;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   color: #000;
   *{
     pointer-events: none;
@@ -30,6 +30,7 @@ html, body{
   .content{
     position: absolute;
     z-index: 2;
+    pointer-events: all;
   }
   .row{
     font-size: 0;
@@ -118,6 +119,10 @@ html, body{
       &.special{
         background: #354e00;
         animation: backgroundCycle 1.4s infinite alternate ease-in-out;
+        mask: url(#logoMask);
+        -webkit-mask: url(#logoMask);
+        mask-size: cover;
+        -webkit-mask-size: cover;
         @keyframes backgroundCycle {
             0% { background-color: #B5B5B5 }
             50% { background-color: #b5ff00

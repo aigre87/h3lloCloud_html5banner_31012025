@@ -1,0 +1,85 @@
+@use "sass:math";
+.s100Px90,
+.s100Px100,
+.s100Px300{
+  .wrapper{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .man{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    right: 7.7%;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+  }
+  .logo{
+    display: none;
+    &__rect{
+
+    }
+  }
+  .content{
+    z-index: 1;
+    color: #000;
+    vertical-align: middle;
+    background: #fff;
+    border-radius: 14px;
+    margin: 9px 9px;
+    padding: 7px 18px 6px 18px;
+    position: relative;
+    &_txt{
+      svg{
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .logoTxt{
+        &--black{
+          display: none;
+        }
+        &--color{
+          height: 14.2px;
+          padding-top: 1px;
+        }
+      }
+      &--1{
+
+        svg{
+          &:first-child{
+
+          }
+        }
+      }
+      &--2{
+        margin-left: 6.4%;
+        margin-top: 4px;
+        svg{
+
+        }
+      }
+    }
+  }
+  .footnote{
+    position: absolute;
+    bottom: 7px;
+    right: 13%;
+    z-index: 1;
+    color: #000;
+    font-size: 6px;
+    line-height: 1.25;
+    &_content{
+      span{
+        display: inline-block;
+      }
+    }
+  }
+  .age{
+    left: 9px;
+    bottom: 7px;
+    position: absolute;
+    display: block;
+  }
+}

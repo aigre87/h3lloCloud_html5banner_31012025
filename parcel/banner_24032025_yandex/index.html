@@ -23,11 +23,26 @@
     <!--s300x300-->
     <!--s480x320-->
     <meta name="ad.size" content="width=480,height=320">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+<svg style="overflow: hidden; display: block; width: 0; height: 0; margin: 0; padding: 0;" width="0" height="0">
+    <defs>
+        <mask id="logoMask" maskContentUnits="objectBoundingBox">
+            <rect width="1" height="1" fill="white"/> <!-- Видимый фон -->
+            <svg viewBox="0 0 100 100" width="1" height="1">
+                <g fill="black">
+                    <path d="M10 24V74H18V24H10Z"/>
+                    <path d="M39 24V74H47V24H39Z"/>
+                    <path d="M91 24L83 32H52V24L91 24Z"/>
+                    <path d="M45 45L41 52H10V45H45Z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M70 75C81 75 90 66 90 55C90 48 86 41 81 38L79 39L76 43C80 45 84 49 84 55C84 62 78 68 71 68C65 68 60 64 59 59L53 64C57 70 63 75 70 75Z"/>
+                </g>
+            </svg>
+        </mask>
+    </defs>
+</svg>
 <span id="click_area" href="#" target="_blank">
-    <span class="banner">
+    <span class="banner s480x320">
         <span class="content">
             <span class="row first">
                 <span class="cell_helper">
@@ -99,37 +114,43 @@
         <span class="animation"></span>
     </span>
 </span>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!--&lt;!&ndash;DEBUG&ndash;&gt;-->
+<!--<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
+<!--<script>-->
+<!--    // DEBUG-->
+<!--    // document.addEventListener("DOMContentLoaded", () => {-->
+<!--        const sizes = ['s320x50', 's320x100', 's728x90', 's970x250', 's1000x120', 's160x600', 's240x400', 's320x480', 's300x500', 's240x600', 's300x600', 's300x250', 's336x280', 's300x300', 's480x320'];-->
+<!--        //const sizes = ['s728x90'];-->
+
+<!--        const originalBanner = document.querySelector(".banner"); // Берём первый баннер-->
+<!--        // if (!originalBanner) {-->
+<!--        //     console.error("Элемент .banner не найден!");-->
+<!--        //     return;-->
+<!--        // }-->
+
+<!--        const container = document.getElementById("click_area");-->
+
+<!--        for (let i = 0; i < sizes.length; i++) {-->
+<!--            const clone = originalBanner.cloneNode(true);-->
+<!--            clone.classList.add(sizes[i]);-->
+
+<!--            container.classList.add('debug');-->
+<!--            container.appendChild(clone);-->
+<!--        }-->
+<!--        originalBanner.remove();-->
+<!--        new Masonry("#click_area", {-->
+<!--            itemSelector: ".banner",-->
+<!--            fitWidth: true // Подгоняет ширину контейнера-->
+<!--        });-->
+<!--// });-->
+<!--</script>-->
+<!--&lt;!&ndash;END DEBUG&ndash;&gt;-->
 <script>
-    // DEBUG
-    // document.addEventListener("DOMContentLoaded", () => {
-        const sizes = ['s320x50', 's320x100', 's728x90', 's970x250', 's1000x120', 's160x600', 's240x400', 's320x480', 's300x500', 's240x600', 's300x600', 's300x250', 's336x280', 's300x300', 's480x320'];
-        //const sizes = ['s728x90'];
-
-        const originalBanner = document.querySelector(".banner"); // Берём первый баннер
-        // if (!originalBanner) {
-        //     console.error("Элемент .banner не найден!");
-        //     return;
-        // }
-
-        const container = document.getElementById("click_area");
-
-        for (let i = 0; i < sizes.length; i++) {
-            const clone = originalBanner.cloneNode(true);
-            clone.classList.add(sizes[i]);
-
-            container.classList.add('debug');
-            container.appendChild(clone);
-        }
-        originalBanner.remove();
-        new Masonry("#click_area", {
-            itemSelector: ".banner",
-            fitWidth: true // Подгоняет ширину контейнера
-        });
-// });
-</script>
-<script>
-    document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);
+    try {
+        document.getElementById("click_area").href = yandexHTML5BannerApi.getClickURLNum(1);
+    } catch (e){
+        console.log(e);
+    }
 </script>
 <script src="js/gsap.js"></script>
 <script src="main.js"></script>

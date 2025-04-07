@@ -1,16 +1,16 @@
 @use "sass:math";
-.s240x400,
-.s300x600 {
+.s300x300,
+.s300x250 {
   .wrapper{
     display: block;
-    width: 85%;
+    width: 88%;
     margin: 0 auto;
   }
   .man{
-    z-index: 0;
+    z-index: 2;
     display: block;
     position: absolute;
-    left: 7.5%;
+    right: 7.7%;
     bottom: 0;
     height: 100%;
     width: auto;
@@ -18,18 +18,22 @@
   .logo{
     position: relative;
     z-index: 1;
-    width: 100%;
-    margin: 20% auto 0;
+    width: 51%;
+    margin-top: 8.2%;
     height: auto;
+    &__rect{
+      rx: 20px;
+      ry: 20px;
+    }
   }
   .content{
     position: relative;
     z-index: 1;
     background: #fff;
     color: #000;
-    margin-top: 20px;
+    margin-top: 12px;
     border-radius: 14px;
-    padding: 38px 17px 14px;
+    padding: 38px 17px 16px;
     &_txt{
       line-height: 1;
       svg{
@@ -60,26 +64,23 @@
   }
   .footnote{
     position: absolute;
-    margin: 0 auto;
+    left: 6%;
+    width: 88%;
     bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
-    color: #fff;
+    color: #000;
     font-size: 5px;
     line-height: 1.25;
-    width: 100%;
-    text-align: center;
     &_content{
-      flex: 1 1 auto;
       span{
         display: block;
       }
     }
   }
   .age{
-    margin-top: 12px;
-    font-size: 8px;
+    right: 6%;
+    bottom: 10%;
+    position: absolute;
     display: block;
   }
 }

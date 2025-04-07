@@ -3,8 +3,17 @@ html, body{
   margin: 0;
   padding: 0;
 }
-#click_area{
+.click_area{
   text-decoration: none;
+}
+.debug{
+  display: block;
+  .banner{
+    border: 1px solid red;
+  }
+  ~.banner{
+    border: 1px solid red;
+  }
 }
 .banner{
   position: relative;
@@ -12,25 +21,31 @@ html, body{
   overflow: hidden;
   background: #c0ef4b;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  div{
+  font-family: "Arial", "Verdana", sans-serif;
+  span{
     display: block;
   }
-  &__wrapper{
+  .wrapper{
 
   }
-  &__man{
-
+  .man{
+    opacity: 0;
   }
-  &__logo{
-
+  .logo{
+    display: block;
   }
-  &__content{
-
+  .content{
+    .br{
+      display: none;
+    }
+    .logoTxt{
+      width: auto;
+    }
     &_txt{
-
-      span{
-        display: block;
+      font-size: 0;
+      svg{
+        width: auto;
+        display: inline-block;
       }
       &--1{
 
@@ -40,16 +55,15 @@ html, body{
       }
     }
   }
-  &__footnote{
+  .footnote{
 
     &_content{
-
       span{
         display: block;
       }
     }
-    &_age{
-
-    }
+  }
+  .age{
+    width: auto;
   }
 }

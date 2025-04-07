@@ -2,26 +2,22 @@
   width: 240px;
   height: 400px;
 }
-.banner{
+.s240x400{
+  .wrapper{
 
-  div{
+  }
+  .man{
 
   }
-  &__wrapper{
-    width: 90%;
+  .logo{
+
   }
-  &__man{
-    left: -4px;
-  }
-  &__logo{
-    padding-top: 48px;
-  }
-  &__content{
-    margin-top: -10px;
-    gap: 16px;
-    padding: 30px 18px;
+  .content{
+
     &_txt{
-      font-size: 18px;
+      svg{
+
+      }
       &--1{
 
       }
@@ -30,17 +26,16 @@
       }
     }
   }
-  &__footnote{
-    font-size: 6px;
-    padding-bottom: 22px;
+  .footnote{
+
     &_content{
-      padding-left: 20px;
+
       span{
 
       }
     }
-    &_age{
-      font-size: 8px;
-    }
+  }
+  .age{
+
   }
 }

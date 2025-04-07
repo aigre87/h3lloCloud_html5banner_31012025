@@ -39,12 +39,14 @@
     }
   }
   .details{
+    z-index: 3;
     bottom: 7%;
     left: 8%;
     right: 8%;
     font-size: 5px;
   }
   .zero{
+    z-index: 4;
     bottom: 12%;
     left: 8%;
     height: 18px;
