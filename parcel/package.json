@@ -5,6 +5,7 @@
     "start": "parcel",
     "start_vk": "parcel banner_24032025_vk/index.html",
     "start_yandex": "parcel banner_24032025_yandex/index.html",
+    "start_pixelCloud": "parcel pixelCloud/index.html",
     "build_banner_31012025": "parcel build --no-source-maps --no-cache --public-url '.'",
     "build_banner_24032025_vk": "parcel build banner_24032025_vk/index.html --no-source-maps --no-cache --public-url '.'",
     "build_banner_24032025_yandex": "parcel build banner_24032025_yandex/index.html --no-source-maps --no-cache --public-url '.'"
@@ -16,6 +17,7 @@
     "@parcel/compressor-gzip": "^2.13.3",
     "@parcel/transformer-raw": "^2.13.3",
     "@parcel/transformer-sass": "2.13.3",
+    "gsap-trial": "^3.12.7",
     "parcel": "^2.13.3",
     "svgo": "^3"
   },
