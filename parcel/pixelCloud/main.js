@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(MotionPathPlugin);
-    gsap.registerPlugin(MotionPathHelper);
-
     const pathRects = document.querySelectorAll(".pathRects rect");
     let prevX = null;
     let prevY = null;

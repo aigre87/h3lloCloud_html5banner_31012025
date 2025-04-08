@@ -1,43 +1,33 @@
-.click_area {
+@use "sass:math";
+html, body{
+  margin: 0;
+  padding: 0;
+}
+.click_area{
   text-decoration: none;
-  color: #000;
 }
-
-.root {
-  display: block;
+.banner{
   position: relative;
-  width: 500px;
-  height: 500px;
-}
-
-.animation {
-  --width: 100%;
-  --height: 100%;
-  --columns: 100;
-  --rows: 100;
-  width: var(--width);
-  height: var(--height);
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  grid-template-rows: repeat(var(--rows), 1fr);
-  .head{
-    left: 50%;
-    top: 50%;
-    position: absolute;
+  display: block;
+  background: #000;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "Arial", "Verdana", sans-serif;
+  span{
     display: block;
-    width: calc( var(--width) * 0.05);
-    height: calc( var(--height) * 0.03);
-    rect{
-      fill: #c0ef4b;
-    }
   }
 }
-.svgRoot{
-  margin: 50px;
-  overflow: visible;
-  width: 250px;
-  height: auto;
-  border: 1px solid green;
+
+.click_area {
+  text-decoration: none;
+  color: #eee;
+}
+
+.banner {
+  position: relative;
+}
+.svgAnim{
+  overflow: hidden;
   .pathRects{
     rect{
       fill: none;
@@ -52,10 +42,10 @@
     }
     .snakeHead{
       &.snakeHeadStart{
-        transform-origin: 50% 0%;
+
       }
       &.snakeHeadEnd{
-        transform-origin: 50% 100%;
+
       }
     }
   }

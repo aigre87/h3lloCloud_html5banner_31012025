@@ -1,0 +1,45 @@
+.s300x600{
+  width: 300px;
+  height: 600px;
+  .wrapper{
+
+  }
+  .man{
+    left: 0;
+  }
+  .logo{
+    margin: 33% auto 0;
+  }
+  .content{
+    margin-top: 30px;
+    border-radius: 14px;
+    padding: 38px 17px 22px;
+    &_txt{
+      svg{
+        height: 25px;
+        width: auto;
+      }
+      &--1{
+
+      }
+      &--2{
+
+      }
+    }
+  }
+  .footnote{
+    font-size: 8px;
+    line-height: 1.25;
+    &_content{
+
+      span{
+
+      }
+    }
+  }
+  .age{
+    margin-top: 18px;
+    height: 14px;
+    width: auto;
+  }
+}
