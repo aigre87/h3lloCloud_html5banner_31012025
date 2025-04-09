@@ -1,0 +1,66 @@
+.s100Px90,
+.s100Px100,
+.s100Px300{
+  .logo{
+    display: none;
+  }
+
+  .svgAnim{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .content{
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    svg{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .logoTxt{
+      height: 13.5px;
+      margin-right: 6px;
+      width: auto;
+    }
+    .word{
+      height: 14px;
+      width: auto;
+      fill: #ebebeb;
+      margin-right: 1px;
+    }
+    &_txt{
+      &--1{
+
+      }
+      &--2{
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .footnote{
+    position: absolute;
+    bottom: 11px;
+    left: 24px;
+    font-size: 5px;
+    line-height: 1.1;
+    &_content{
+      span{
+        display: inline-block;
+      }
+    }
+  }
+
+  .age{
+    width: 16px;
+    height: auto;
+    position: absolute;
+    bottom: 13px;
+    right: 16px;
+  }
+}

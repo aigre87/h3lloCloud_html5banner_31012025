@@ -5,5 +5,38 @@
   .svgAnim{
     width: 100%;
     height: auto;
+    position: absolute;
+    top: 18%;
   }
+  .content{
+    display: none;
+  }
+  .logo{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 69px;
+    height: auto;
+  }
+  .age{
+    position: absolute;
+    right: 17px;
+    bottom: 20px;
+    width: 16px;
+    height: auto;
+  }
+  .footnote{
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    font-size: 6px;
+    line-height: 1.1;
+    &_content{
+      margin: 0 22px;
+      span{
+        display: block;
+      }
+    }
+  }
+
 }

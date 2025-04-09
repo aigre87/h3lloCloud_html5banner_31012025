@@ -6,10 +6,20 @@ html, body{
 .click_area{
   text-decoration: none;
 }
+.debug{
+  display: block;
+  .banner{
+    border: 1px solid red;
+  }
+  ~.banner{
+    border: 1px solid red;
+  }
+}
 .banner{
   position: relative;
   display: block;
   background: #000;
+  color: #5a5858;
   overflow: hidden;
   text-decoration: none;
   font-family: "Arial", "Verdana", sans-serif;
@@ -20,25 +30,41 @@ html, body{
 
 .click_area {
   text-decoration: none;
-  color: #eee;
+  color: #5a5858;
 }
 
 .banner {
   position: relative;
 }
+.age{
+  fill: #5a5858;
+}
 .svgAnim{
-  overflow: hidden;
+  transform: translateZ(1px);
+  overflow: visible;
   .pathRects{
     rect{
       fill: none;
       //stroke: blue;
       //stroke-width: 0.05;
     }
+    .snakeItem{
+      will-change: transform;
+      transform: translateZ(1px);
+    }
+    .snakeHead{
+      rect{
+        will-change: transform;
+        transform: translateZ(1px);
+      }
+    }
   }
   .snakeItems{
     .snakeItem{
+      will-change: transform, opacity;
       opacity: 0;
       fill: #c0ef4b;
+      transform: translateZ(1px);
     }
     .snakeHead{
       &.snakeHeadStart{
@@ -50,3 +76,20 @@ html, body{
     }
   }
 }
+.content{
+  .logoTxt{
+
+  }
+  .word{
+    fill: #ebebeb;
+  }
+  &_txt{
+    &--1{
+
+    }
+    &--2{
+
+    }
+  }
+}
+

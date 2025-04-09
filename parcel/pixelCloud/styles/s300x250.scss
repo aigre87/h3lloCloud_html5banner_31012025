@@ -1,62 +1,34 @@
-@use "sass:math";
 .s300x250 {
   width: 300px;
   height: 250px;
-  .wrapper{
-
-  }
-  .man{
-
+  .svgAnim{
+    width: 81%;
+    transform: translateX(-50%);
+    left: 50%;
+    height: auto;
+    position: absolute;
+    top: 6%;
   }
   .logo{
-    width: 45%;
-    margin-top: 5%;
-    &__rect{
-
-    }
-  }
-  .content{
-    margin-top: 12px;
-    border-radius: 14px;
-    padding: 26px 17px 14px;
-    &_txt{
-
-      svg{
-        height: 16px;
-      }
-      .logoTxt{
-        &--black{
-
-        }
-        &--color{
-
-        }
-      }
-      &--1{
-        margin-bottom: 14px;
-        svg{
-          &:first-child{
-
-          }
-        }
-      }
-      &--2{
-        svg{
-
-        }
-      }
-    }
-  }
-  .footnote{
-    bottom: 12px;
-    &_content{
-
-      span{
-
-      }
-    }
+    width: 86px;
+    top: 30px;
+    left: 28px;
+    right: auto;
   }
   .age{
-
+    width: 17px;
+    bottom: 24px;
+    right: 26px;
+  }
+  .footnote{
+    font-size: 5px;
+    line-height: 1.2;
+    bottom: 22px;
+    &_content{
+      margin: 0 22px;
+      span{
+        display: block;
+      }
+    }
   }
 }

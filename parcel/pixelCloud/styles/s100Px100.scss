@@ -3,140 +3,67 @@
 .s100Px100 {
   width: 100%;
   height: 100px;
-
-  .wrapper {
-
+  .svgAnim{
+    width: auto;
+    height: 114%;
+    position: absolute;
+    top: 50%;
+    right: 54px;
+    transform: translateY(-50%);
   }
-
-  .man {
-
-  }
-
-  .logo {
-
-    &__rect {
-
-    }
-  }
-
-  .content {
-
-    &_txt {
-      svg {
-        height: 24px;
-        margin-right: 13px;
-      }
-
-      .logoTxt {
-        &--black {
-
-        }
-
-        &--color {
-          height: 18px;
-        }
-      }
-
-      &--1 {
-
-        svg {
-          &:first-child {
-
-          }
-        }
-      }
-
-      &--2 {
-        @media screen and (max-width: 600px) {
-          margin-left: 0;
-        }
-
-        svg {
-
-        }
-      }
-    }
-  }
-
-  .footnote {
-    @media screen and (max-width: 900px) {
-      right: 150px;
-    }
-
-    &_content {
-
-      span {
-
-      }
-    }
-  }
-
-  .age {
-
-  }
-
-  @media screen and (max-width: 550px) {
-    .content {
-      margin: 9px 9px;
-      padding: 6px 14px 8px 14px;
-      position: relative;
-      &_txt {
-        max-width: 84%;
-        svg {
-          margin-top: 2px;
-          height: 15px;
-          margin-right: 7px;
-        }
-
-        .logoTxt {
-          &--black {
-
-          }
-
-          &--color {
-            height: 11px;
-            padding-top: 0.5px;
-          }
-        }
-
-        &--1 {
-
-          svg {
-            &:first-child {
-
-            }
-          }
-        }
-
-        &--2 {
-          margin-left: 0;
-          margin-top: 0;
-          svg {
-
-          }
-        }
-      }
-    }
-    .footnote {
-      font-size: 5px;
-      right: auto;
-      left: 16px;
-      max-width: 70%;
-
-      &_content {
-
-        span {
-
-        }
-      }
-    }
-    .age {
-      right: 9px;
-      left: auto;
-      bottom: 13px;
+  @media screen and (min-width: 768px){
+    .content{
       position: absolute;
-      display: block;
-      height: 6px;
+      top: 20px;
+      left: 24px;
+      svg{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .logoTxt{
+        height: 20px;
+        margin-right: 6px;
+        width: auto;
+      }
+      .word{
+        height: 18px;
+        width: auto;
+        fill: #ebebeb;
+        margin-right: 1px;
+      }
+      &_txt{
+        &--1{
+
+        }
+        &--2{
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .content{
+      &_txt{
+        &--1{
+          .word{
+            display: none;
+          }
+        }
+        &--2{
+          display: none;
+        }
+      }
+    }
+    .footnote{
+      bottom: 10px;
+      &_content{
+        span{
+          display: block;
+        }
+      }
+    }
+    .svgAnim{
+      right: 10%;
     }
   }
 }
